@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title Website -->
+    <title>BizGrowth - 2024</title>
+
+    <!-- Icon Website in Tab -->
+    <link rel="icon" type="image/svg+xml" href="./images/logo.svg" />
+
+    <!-- Link At Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+   
+    <!-- Link external CSS -->
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- Link CDN - TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navbar Component -->
+    <nav class="w-screen h-max px-16 py-7 flex flex items-center">
+        
+        <!-- Sidebar - Mobile Device Only -->
+        <div class="fixed lg:hidden top-0 left-0 z-[99999] w-[90%] h-screen shadow-lg bg-white p-8">
+            <div class="w-full flex items-center justify-between">
+                <div class="w-[20%] flex items-center">
+                    <img src="./images/logo.svg" alt="logo" class="w-[25px] ml-[-1px] mr-2">
+                    <h1 class="text-[28px] flex items-center"><span class="text-green-500">Biz</span><span class="text-blue-500 font-[600]">Growth</span></h1>
+                </div>
+
+               <div class="w-[40px] h-[40px] rounded-[8px] bg-red-500 text-white flex items-center justify-center cursor-pointer active:scale-[0.98] hover:brightness-[90%] p-2">
+                    <i class="fas fa-times"></i>
+               </div>
+            </div>
+
+            <!-- List Menu Sidebar -->
+            <ul class="list-none text-[18px] text-slate-400">
+                <a href="#beranda">
+                    <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] my-6">Beranda</li>
+                </a>
+                    <a href="#umkm">
+                    <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] my-6">UMKM</li>
+                </a>
+                    <a href="#benefit">
+                    <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] my-6">Manfaat</li>
+                </a>
+                    <a href="#story">
+                    <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] my-6">Kisah sukses</li>
+                </a>
+                    <a href="#user">
+                    <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] my-6">Pelaku</li>
+                </a>
+                    <a href="#type">
+                    <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] my-6">Jenis biaya</li>
+                </a>
+                    <a href="#article">
+                    <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] my-6">Artikel</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="w-[20%] flex items-center">
+            <img src="./images/logo.svg" alt="logo" class="w-[25px] ml-[-1px] mr-2">
+            <h1 class="text-[28px] flex items-center"><span class="text-green-500">Biz</span><span class="text-blue-500 font-[600]">Growth</span></h1>
+        </div>
+
+         <!-- Humberger Button - Mobile Device Only -->
+         <div class="w-[40px] h-[40px] rounded-[8px] ml-auto cursor-pointer active:scale-[0.98] hover:brightness-[90%] duration-200 rounded-[8px] p-2 lg:hidden flex flex-col items-center justify-between">
+            <div class="w-full h-[4px] bg-slate-400"></div>
+            <div class="w-full h-[4px] bg-slate-400"></div>
+            <div class="w-full h-[4px] bg-slate-400"></div>
+        </div>
+
+        <div class="w-[80%] hidden lg:flex justify-end">
+            <ul class="list-none text-[18px] text-slate-400 flex items-center">
+                <a href="#beranda">
+                    <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] ml-12">Beranda</li>
+                </a>
+                    <a href="#umkm">
+                    <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] ml-12">UMKM</li>
+                </a>
+                    <a href="#benefit">
+                    <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] ml-12">Manfaat</li>
+                </a>
+                    <a href="#story">
+                    <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] ml-12">Kisah sukses</li>
+                </a>
+                    <a href="#user">
+                    <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] ml-12">Pelaku</li>
+                </a>
+                    <a href="#type">
+                    <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] ml-12">Jenis biaya</li>
+                </a>
+                    <a href="#article">
+                    <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] ml-12">Artikel</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Section 1 / Hero Component -->
+    <section id="beranda" class="relative w-screen h-max bg-white flex items-center">
+        <img src="./images/square.svg" alt="lines" class="absolute w-full right-0 top-0">
+        
+        <div class="absolute left-0 top-[30%] w-[50%] h-[60vh] rounded-full bg-blue-400 blur-[250px]">
+        </div>
+        
+        <!-- Conten Left -->
+        <div class="relative z-[333] flex flex-col pl-16 justify-center w-1/2 h-full">
+            <h2 data-aos="fade-right" class="text-[64px] text-[700] leading-normal mt-[-40px] mb-2">
+                Optimalkan Web, Kembangkan <span class="text-blue-600 font-[600] mx-2">Bisnis</span> UMKM Anda
+            </h2>
+            <p data-aos="fade-right" class="text-slate-700 leading-loose mb-2 ml-[3px]">Lorem ipsum dolor sit amet consectetur adipisicing elit-.</p>
+            <div data-aos="fade-right" class="w-[90%] flex items-center ml-[-9px]">
+                <button id="btn-biz" class="border-slate-400 bg-blue-500 text-[18px] text-white active:scale-[0.98] hover:brightness-[90%] duration-200 ml-3 outline-0 rounded-lg mt-6 w-max h-max px-12 py-3">
+                    Jelajahi web
+                </button>
+                <a href="#inspiration">
+                    <button id="btn-biz" class="border border-blue-500 bg-white text-[18px] text-blue-500 active:scale-[0.98] hover:brightness-[90%] duration-200 ml-5 outline-0 rounded-lg mt-6 w-max h-max px-12 py-3 flex items-center">
+                        <p>
+                            Lihat Video Inspirasi 
+                        </p>
+                    </button>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Content Right -->
+        <div data-aos="fade-up" data-aos-duration="1000" class="relative flex items-center justify-center w-1/2 h-max overflow-hidden pr-12">
+            <img src="./images/hero.png" alt="people-image" class="relative bottom-[0px] scale-[1]">
+        </div>
+    </section>
+    
+    <!-- Section 2 / Content -->
+    <section class="relative w-[90vw] overflow-hidden rounded-[20px] mx-auto text-left text-white mt-12 pt-10 pb-12 px-14 bg-blue-600">
+        <div class="absolute right-0 top-[30%] w-[40%] h-[90%] rounded-full bg-blue-800 blur-[200px]">
+        </div>
+        
+        <p data-aos="fade-right">Beberapa Objek Inspirasi UMKM Indonesia :</p>
+        <div class="relative z-[33] w-full flex justify-between items-center pr-4 mt-10">
+            <div data-aos="fade-up" data-aos-duration="1000" class="text-center">
+                <div class="w-[65px] h-[65px] border border-white flex items-center justify-center rounded-full">
+                    <div class="w-[50px] h-[50px] bg-white rounded-full p-2 flex items-center justify-center">
+                        <img src="./images/inspiration1.png" alt="icon-inspiration" class="w-[70%]">
+                    </div>
+                </div>
+                <p class="mt-3 text-[14px]">Makanan</p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="text-center">
+                <div class="w-[65px] h-[65px] border border-white flex items-center justify-center rounded-full">
+                    <div class="w-[50px] h-[50px] bg-white rounded-full p-2 flex items-center justify-center">
+                        <img src="./images/inspiration2.png" alt="icon-inspiration" class="w-[70%]">
+                    </div>
+                </div>
+                <p class="mt-3 text-[14px]">Sayuran</p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="text-center">
+                <div class="w-[65px] h-[65px] border border-white flex items-center justify-center rounded-full">
+                    <div class="w-[50px] h-[50px] bg-white rounded-full p-2 flex items-center justify-center">
+                        <img src="./images/inspiration3.png" alt="icon-inspiration" class="w-[70%]">
+                    </div>
+                </div>
+                <p class="mt-3 text-[14px]">Minyak</p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="text-center">
+                <div class="w-[65px] h-[65px] border border-white flex items-center justify-center rounded-full">
+                    <div class="w-[50px] h-[50px] bg-white rounded-full p-2 flex items-center justify-center">
+                        <img src="./images/inspiration4.png" alt="icon-inspiration" class="w-[70%]">
+                    </div>
+                </div>
+                <p class="mt-3 text-[14px]">Minuman</p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="text-center">
+                <div class="w-[65px] h-[65px] border border-white flex items-center justify-center rounded-full">
+                    <div class="w-[50px] h-[50px] bg-white rounded-full p-2 flex items-center justify-center">
+                        <img src="./images/inspiration6.png" alt="icon-inspiration" class="w-[70%]">
+                    </div>
+                </div>
+                <p class="mt-3 text-[14px]">Jasa</p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="text-center">
+                <div class="w-[65px] h-[65px] border border-white flex items-center justify-center rounded-full">
+                    <div class="w-[50px] h-[50px] bg-white rounded-full p-2 flex items-center justify-center">
+                        <img src="./images/inspiration5.png" alt="icon-inspiration" class="w-[70%]">
+                    </div>
+                </div>
+                <p class="mt-3 text-[14px]">Bahan Bakar</p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="text-center">
+                <div class="w-[65px] h-[65px] border border-white flex items-center justify-center rounded-full">
+                    <div class="w-[50px] h-[50px] bg-white rounded-full p-2 flex items-center justify-center">
+                        <img src="./images/inspiration7.png" alt="icon-inspiration" class="w-[70%]">
+                    </div>
+                </div>
+                <p class="mt-3 text-[14px]">Permainan</p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="text-center">
+                <div class="w-[65px] h-[65px] border border-white flex items-center justify-center rounded-full">
+                    <div class="w-[50px] h-[50px] bg-white rounded-full p-2 flex items-center justify-center">
+                        <img src="./images/inspiration8.png" alt="icon-inspiration" class="w-[70%]">
+                    </div>
+                </div>
+                <p class="mt-3 text-[14px]">Ternak</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 3 / Content -->
+    <section id="umkm" class="relative w-[90vw] mx-auto flex justify-center text-center items-center h-max mb-16 mt-20">
+        
+        <!-- Particle Square -->
+        <img src="./images/square.svg" alt="particle-square" class="absolute left-[-60px] top-[-50px] z-[-1]">
+    
+        <div class="relative z-[22] text-left h-max w-[100%]">
+            <small class="bg-blue-500 text-white rounded-full w-max h-max px-8 py-2 text-center">Penjelasan</small>
+            <h2 data-aos="fade-up" class="text-[36px] my-6 relative">Apa itu UMKM 😀 ?</h2>
+            <p data-aos="fade-up" data-aos-duration="1000" class="w-full text-justify leading-[3em] text-slate-800">
+                UMKM adalah singkatan dari Usaha Mikro, Kecil, dan Menengah. 
+                Istilah ini merujuk pada jenis-jenis usaha yang memiliki skala 
+                kecil hingga menengah dalam hal jumlah karyawan, omset, dan aset. 
+                UMKM memainkan peran penting dalam perekonomian karena mereka 
+                menyumbang pada penciptaan lapangan kerja, pertumbuhan ekonomi 
+                lokal, dan pemberdayaan masyarakat. Di banyak negara, 
+                termasuk Indonesia, UMKM merupakan tulang punggung ekonomi 
+                dan menjadi fokus kebijakan pemerintah untuk pengembangan 
+                sektor ekonomi.
+            </p>
+        </div>
+    </section> 
+
+    <!-- Section 4 / Content -->
+    <section class="relative w-[90vw] h-[600px] bg-blue-600 border border-slate-500 text-white mb-12 pt-5 mx-auto rounded-[20px] flex items-center overflow-hidden">
+        <img src="./images/line2.svg" alt="lines" class="absolute scale-[2] w-full h-full opacity-[0.3]">
+        
+        <div class="relative w-1/2 z-[22] px-20">
+            <h2 data-aos="fade-right" class="text-[36px] mb-8">Kuliner - UMKM terpopuler</h2>
+            <p data-aos="fade-right" class="leading-[3em] text-justify text-slate-100">
+                Mengikuti tren bisnis digital menjadi sangat penting di era digital saat ini, di mana internet telah menjadi bagian integral dari kehidupan sehari-hari. Bagi UMKM, memiliki website bukan lagi sekadar pilihan, tetapi suatu keharusan untuk tetap kompetitif dan relevan. Website memungkinkan UMKM untuk hadir di dunia digital, di mana konsumen modern cenderung mencari informasi dan melakukan pembelian secara online
+            </p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="relative w-1/2 z-[22] h-full flex items-center justify-center">
+            <img src="./images/Topographic.svg" alt="people" class="absolute top-[-300px] right-[-100px] mt-auto w-[100%] h-[100%]">
+            <img src="./images/food.svg" alt="people" class="relative w-[90%] h-[90%]">
+        </div>
+    </section>
+    
+    <!-- Section 5 / Content -->
+    <section id="benefit" class="relative flex flex-col w-[90vw] text-left h-max mx-auto mt-20 mb-12">
+        
+        <!-- Particle Square -->
+        <img src="./images/square.svg" alt="particle-square" class="absolute left-[-60px] top-[-50px] z-[-1]">
+        
+        <div class="absolute right-[-150px] top-[-150px] w-[50%] h-[60vh] rounded-full bg-blue-200 blur-[250px]">
+        </div>
+
+        <small class="bg-blue-500 text-white rounded-full w-max h-max px-8 py-2 text-center">Yuk Optimasi</small>
+        <h2 data-aos="fade-right" class="text-[36px] w-full my-5 mb-12 relative">Manfaat Optimasi Web <span class="relative bottom-1">💻</span></h2>
+        <div class="relative h-max w-full flex items-center justify-between overflow-hidden">
+            <div data-aos="fade-up" class="w-1/3 h-[460px] bg-white border border-slate-300 px-10 flex flex-col justify-center rounded-[20px] overflow-hidden">
+                <div class="w-[100px] h-[100px] mb-4 bg-blue-300 rounded-full border border-slate-400 flex items-center justify-center">
+                    <img src="./images/benefit1.png" alt="benefit" class="w-[50%]">
+                </div>
+                <h2 class="mt-4 mb-6 font-[500] text-[20px]">Meningkatkan Penjualan</h2>
+                <p class="text-slate-500 border-t border-t-slate-300 pt-3 leading-[3em] text-[14px] w-full text-justify">
+                    Menarik perhatian pengunjung dan membuat mereka lebih mungkin untuk melakukan tindakan yang diinginkan, seperti membeli produk atau mendaftar layanan
+                </p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="w-1/3 h-[460px] bg-white border border-slate-300 px-10 flex flex-col justify-center rounded-[20px] overflow-hidden mx-12">
+                <div class="w-[100px] h-[100px] mb-4 bg-red-300 rounded-full border border-slate-400 flex items-center justify-center">
+                    <img src="./images/benefit2.png" alt="benefit" class="w-[50%]">
+                </div>
+                <h2 class="mt-4 mb-6 font-[500] text-[20px]">Pengalaman Pelanggan</h2>
+                <p class="text-slate-500 border-t border-t-slate-300 pt-3 leading-[3em] text-[14px] w-full text-justify">
+                    Memberikan kemudahan dan kenyamana yang berbeda ketika berbelanja dan mencari informasi produk secara lebih baik secara online dan cepat dimana saja
+                </p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="2000" class="w-1/3 h-[460px] bg-white border border-slate-300 px-10 flex flex-col justify-center rounded-[20px] overflow-hidden">
+                <div class="w-[100px] h-[100px] mb-4 bg-green-300 rounded-full border border-slate-400 flex items-center justify-center">
+                    <img src="./images/benefit3.png" alt="benefit" class="w-[50%]">
+                </div>
+                <h2 class="mt-4 mb-6 font-[500] text-[20px]">Jangkauan Pasar</h2>
+                <p class="text-slate-500 border-t border-t-slate-300 pt-3 leading-[3em] text-[14px] w-full text-justify">
+                    Menggapai semua pembeli dari berbagai kalangan dari jarak jauh. Menarik perhatian para pembeli dengan teknologi web yang modern dan ramah bagi para pembeli
+                </p>
+            </div>
+        </div>
+    </section>    
+    
+    <!-- Section 6 / Content -->
+    <section id="story" class="relative w-[90vw] h-[1000px] z-[22] mx-auto border border-blue-600 overflow-hidden p-12 bg-blue-600 mt-24 mb-16 rounded-[20px]">
+        <img src="./images/line2.svg" alt="lines" class="absolute scale-[2] w-full h-full opacity-[0.3]">
+        
+        <h1 data-aos="fade-up" class="relative z-[33] text-white text-center mx-auto text-[52px]">Kisah <span class="text-green-300">Sukses</span> <br> Pengusaha UMKM (Web)</h1>
+        <img data-aos="fade-up" data-aos-duration="1000" src="./images/human.svg" alt="human" class="w-[80%] mx-auto w-full relative mt-[-200px]">
+        <div data-aos="fade-up" class="relative z-[999] mt-auto bottom-[200px] mx-auto w-[140px] h-[140px] rounded-full flex items-center justify-center border border-blue-500">
+            <div class="w-[100px] h-[100px] rounded-full flex items-center justify-center text-[36px] bg-blue-500 text-white cursor-pointer hover:brightness-[90%] active:scale-[0.98]">
+                <i class="fa fa-play"></i>
+            </div>
+        </div>
+        <img src="./images/semiCircle.svg" alt="semi-circle-white" class="absolute w-full left-0 bottom-0">
+    </section>
+
+    <!-- Section 7 / Content -->
+    <section id="user" class="relative w-[90vw] mx-auto flex justify-center text-center items-center h-max my-20">
+        
+        <!-- Particle Square -->
+        <img src="./images/square.svg" alt="particle-square" class="absolute left-[-60px] top-[-50px] z-[-1]">
+        
+        <div class="absolute right-[-150px] top-[-150px] w-[50%] h-[60vh] rounded-full bg-blue-200 blur-[250px]">
+        </div>
+        
+        <div class="relative z-[22] text-left h-max w-[100%]">
+            <small class="bg-blue-500 text-white rounded-full w-max h-max px-8 py-2 text-center">Pengguna</small>
+            <h2 data-aos="fade-right" class="text-[36px] my-6 relative">Pelaku Optimasi Landing Page UMKM</h2>
+            <p data-aos="fade-right" data-aos-duration="1000" class="w-full text-justify leading-[3em] text-slate-800">
+                Siapa saja yang harus melakukan optimasi ini? Pada dasarnya, pemilik UMKM adalah yang paling berkepentingan dalam memastikan landing page mereka dioptimalkan, karena ini langsung berdampak pada kesuksesan bisnis mereka. Selain itu, tim pemasaran digital atau ahli SEO yang dipekerjakan oleh UMKM juga berperan penting dalam proses ini. Mereka memiliki keahlian teknis dan strategi untuk melakukan optimasi yang efektif. Bagi pelaku usaha kecil dan menengah yang baru memulai atau tidak memiliki tim khusus, belajar dasar-dasar optimasi web atau bekerja sama dengan konsultan digital marketing bisa menjadi solusi untuk memastikan bahwa landing page mereka tetap kompetitif dan efektif dalam menarik dan mempertahankan pelanggan.
+            </p>
+        </div>
+    </section> 
+
+    <!-- Section 8 /Content -->
+    <section class="relative w-screen h-[600px] bg-blue-600 border border-slate-500 text-white mb-12 pt-5 flex items-center overflow-hidden">
+        <img src="./images/line2.svg" alt="lines" class="absolute scale-[2] w-full h-full opacity-[0.3]">
+       
+        <div data-aos="fade-up" class="relative w-1/2 z-[22] p-12 h-full flex items-end justify-center">
+            <img src="./images/optimasi.svg" alt="people" class="absolute bottom-[-50px] mt-auto w-[80%] h-[100%]">
+        </div>
+        <div class="relative w-1/2 z-[22] px-4">
+            <h2 data-aos="fade-left" data-aos-duration="1000" class="text-[36px]">Kapan Kita Optimasi Web ?</h2>
+            <ul data-aos="fade-left" data-aos-duration="1000" class="list-none">
+                <li class="w-[90%] mt-8 mb-12 text-justify leading-loose">
+                    <span class="font-[700] text-[16px] mb-2">
+                        Kampanye Pemasaran: 
+                    </span>
+                    <br>
+                    Jelang dan sesudah kampanye pemasaran besar-besaran, optimalkan untuk mengoptimalkan hasil kampanye                
+                </li>
+                <li class="w-[90%] mt-8 mb-12 text-justify leading-loose">
+                    <span class="font-[700] text-[16px] mb-2">
+                        Menyambut Musim atau Hari Besar: 
+                    </span>
+                    <br>
+                    Saat mendekati musim atau hari besar tertentu (seperti liburan),menarik minat pelanggan potensial yang mencari hadiah atau penawaran khusus
+                </li>
+                <li class="w-[90%] mt-8 mb-12 text-justify leading-loose">
+                    <span class="font-[700] text-[16px] mb-2">
+                        Peningkatan Performa: 
+                    </span>
+                    <br>
+                    Saat teknologi atau tren desain berubah, penting untuk memperbarui landing page agar tetap relevan dan efektif
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section 9 / Content -->
+    <section class="relative w-[90vw] h-max rounded-[20px] mt-16 mb-20 pt-5 mx-auto">
+        <div class="absolute right-[0px] bottom-[-60px] w-[50%] h-[60vh] rounded-full bg-blue-300 blur-[250px]">
+        </div>
+
+        <!-- Particle Square -->
+        <img src="./images/square.svg" alt="particle-square" class="absolute left-[-60px] top-[-50px] z-[-1]">
+        
+        <small class="bg-blue-500 text-white rounded-full w-max h-max px-8 py-2 text-center">Prioritas</small>
+        <h2 data-aos="fade-right" class="text-[36px] my-6 relative">Pentingnya Web Landing Page 🚀</h2>
+        <p data-aos="fade-right" data-aos-duration="1000" class="leading-[3em] w-full text-justify my-6 text-slate-600">
+            Web landing page yang efektif sangat penting bagi UMKM karena berfungsi sebagai wajah pertama bisnis di dunia digital. Dalam era teknologi saat ini, konsumen cenderung mencari informasi secara online sebelum melakukan pembelian. Sebuah landing page yang dirancang dengan baik dapat menarik perhatian pengunjung, memberikan informasi yang relevan, dan mendorong mereka untuk melakukan tindakan seperti mendaftar, membeli produk, atau menghubungi bisnis. Ini adalah langkah pertama untuk membangun kepercayaan dan kredibilitas dengan audiens, serta memperkuat branding UMKM di pasar yang semakin kompetitif.
+        </p>
+        <p data-aos="fade-right" data-aos-duration="1000" class="leading-[3em] w-full text-justify my-6 text-slate-600">
+            Selain itu, landing page yang efektif membantu UMKM mengoptimalkan konversi dengan menyediakan jalur yang jelas dan terarah bagi pengunjung. Dengan desain yang intuitif, CTA yang menonjol, dan konten yang menarik, landing page dapat meningkatkan interaksi pengguna dan mengurangi tingkat pentalan. Alhasil, UMKM dapat melihat peningkatan dalam penjualan, pendaftaran, dan keterlibatan pelanggan. Dengan menggunakan alat analitik, UMKM juga dapat memantau kinerja landing page mereka, melakukan penyesuaian berdasarkan data, dan terus meningkatkan efektivitas strategi pemasaran mereka. Ini tidak hanya mendukung pertumbuhan bisnis tetapi juga memastikan keberlanjutan dalam jangka panjang.
+        </p>
+    </section>
+    
+    <!-- Section 10 / Content -->
+    <section class="relative w-screen h-[600px] bg-blue-600 overflow-hidden border border-slate-500 text-white mb-12 pt-5 mx-auto flex items-center">
+        <img src="./images/line2.svg" alt="lines" class="absolute scale-[2] w-full h-full opacity-[0.3]">
+        
+        <div class="relative z-[22] overflow-hidden w-1/2 px-20">     
+            <h2 data-aos="fade-right" class="text-[36px] mb-8">Pengurangan Biaya Promosi</h2>
+            <p data-aos="fade-right" class="leading-[3em] text-justify text-slate-100">
+                Mengurangi biaya promosi menjadi salah satu keunggulan utama dari memiliki website bagi UMKM. Promosi konvensional seperti iklan cetak, televisi, atau radio sering kali membutuhkan anggaran yang besar dan hanya memberikan hasil sementara. Sementara itu, dengan menggunakan website, UMKM dapat menjalankan kampanye promosi dengan biaya yang jauh lebih rendah
+            </p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="relative z-[22] w-1/2 h-ful overflow-hidden flex items-center justify-center">
+            <img src="./images/mainBenefit.svg" alt="people" class="relative w-[90%] h-[90%]">
+        </div>
+    </section>
+    
+    <!-- Section 11 /Content -->
+    <section class="relative w-[90vw] h-max rounded-[20px] mt-16 mb-20 pt-5 mx-auto">
+        <div class="absolute right-[0px] bottom-[-60px] w-[50%] h-[60vh] rounded-full bg-blue-300 blur-[250px]">
+        </div>
+
+        <!-- Particle Square -->
+        <img src="./images/square.svg" alt="particle-square" class="absolute left-[-60px] top-[-50px] z-[-1]">
+        
+        <small class="bg-blue-500 text-white rounded-full w-max h-max px-8 py-2 text-center">Zaman Now</small>
+        <h2 data-aos="fade-right" class="text-[36px] my-6 relative">Menjangkau Generasi Digital ✨</h2>
+        <p data-aos="fade-right" data-aos-duration="1000" class="leading-[3em] w-full text-justify my-6 text-slate-600">
+            Web landing page yang efektif sangat penting bagi UMKM karena berfungsi sebagai wajah pertama bisnis di dunia digital. Dalam era teknologi saat ini, konsumen cenderung mencari informasi secara online sebelum melakukan pembelian. Sebuah landing page yang dirancang dengan baik dapat menarik perhatian pengunjung, memberikan informasi yang relevan, dan mendorong mereka untuk melakukan tindakan seperti mendaftar, membeli produk, atau menghubungi bisnis. Ini adalah langkah pertama untuk membangun kepercayaan dan kredibilitas dengan audiens, serta memperkuat branding UMKM di pasar yang semakin kompetitif.
+        </p>
+        <p data-aos="fade-right" data-aos-duration="1000" class="leading-[3em] w-full text-justify my-6 text-slate-600">
+            Selain itu, landing page yang efektif membantu UMKM mengoptimalkan konversi dengan menyediakan jalur yang jelas dan terarah bagi pengunjung. Dengan desain yang intuitif, CTA yang menonjol, dan konten yang menarik, landing page dapat meningkatkan interaksi pengguna dan mengurangi tingkat pentalan. Alhasil, UMKM dapat melihat peningkatan dalam penjualan, pendaftaran, dan keterlibatan pelanggan. Dengan menggunakan alat analitik, UMKM juga dapat memantau kinerja landing page mereka, melakukan penyesuaian berdasarkan data, dan terus meningkatkan efektivitas strategi pemasaran mereka. Ini tidak hanya mendukung pertumbuhan bisnis tetapi juga memastikan keberlanjutan dalam jangka panjang.
+        </p>
+    </section>
+    
+    <!-- Section 12 /Content -->
+    <section class="relative w-screen min-h-[600px] bg-blue-600 overflow-hidden border border-slate-500 text-white mb-12 pt-5 mx-auto flex items-center">
+        <img src="./images/line2.svg" alt="lines" class="absolute scale-[2] w-full h-full opacity-[0.3]">
+        
+        <div class="relative z-[22] overflow-hidden w-1/2 px-20">
+            <h2 data-aos="fade-right" class="text-[36px] mb-8">Kredibilitas dan Profesionalisme</h2>
+            <p data-aos="fade-right" class="leading-[3em] text-justify text-slate-100">
+                Sebuah website yang dirancang dengan baik dapat memberikan kesan profesional dan meningkatkan kredibilitas bisnis UMKM di mata konsumen. Dengan adanya website, UMKM dapat menunjukkan informasi tentang produk atau layanan yang mereka tawarkan, serta memberikan kontak yang mudah dijangkau untuk berkomunikasi dengan pelanggan. Hal ini membantu membangun kepercayaan dan memperkuat branding bisnis, sehingga menarik lebih banyak pelanggan potensial
+            </p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="relative z-[22] w-1/2 h-max py-12 overflow-hidden flex items-center justify-center">
+            <img src="./images/profesional.svg" alt="people-profesional" class="relative bottom-5 w-[80%] h-[80%]">
+        </div>
+    </section>
+    
+    <!-- Section 13 / Content -->
+    <section id="type" class="relative w-[90vw] h-max rounded-[20px] mb-12 pt-16 mx-auto flex">
+        
+        <!-- Particle Square -->
+        <img src="./images/square.svg" alt="particle-square" class="absolute left-[-60px] top-[-50px] z-[-1]">
+        
+        <div class="relative w-1/2 pl-4">
+            <div class="absolute left-[0px] bottom-[-60px] w-[50%] h-[60vh] rounded-full bg-blue-300 blur-[250px]">
+            </div>
+            <h2 data-aos="fade-right" class="text-[36px] mb-6 relative">Pengurangan Biaya</h2>
+            <h2 data-aos="fade-right" class="text-[36px] my-6 ml-12 relative">Promosi dan Operasional</h2>
+            <img data-aos="fade-up" src="./images/deskripsi.svg" alt="people" class="w-[80%] relative mt-16">
+        </div>
+        <div class="relative w-1/2">
+            <div class="w-full h-max border border-blue-500 p-4 rounded-[24px]">
+                <div class="w-full h-max bg-blue-100 px-8 pb-4 pt-10 rounded-[20px]">
+                    <h2 class="font-[600] mb-8 text-[20px]">Jenis Biaya:</h2>
+                    <div data-aos="fade-up" class="w-full rounded-[10px] my-4 bg-white flex items-center bg-white p-6">
+                        <div class="w-[15%]">
+                            <div class="w-[40px] h-[40px] mr-2 rounded-full flex items-center justify-center bg-blue-800 text-white">
+                                1
+                            </div>
+                        </div>
+                        <div class="w-[85%]">
+                            <h3 class="font-[600] text-blue-700 mb-2">biaya distribusi informasi dan pemasaran</h3>
+                            <p class="text-[14px] text-justify text-slate-500 leading-[3em] w-[90%]">Tanpa web landing page, UMKM mungkin harus mengandalkan media cetak, iklan fisik, atau pameran untuk menyebarkan informasi tentang produk atau layanan mereka</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="w-full rounded-[10px] my-4 flex items-center p-6">
+                        <div class="w-[15%]">
+                            <div class="w-[40px] h-[40px] mr-2 rounded-full flex items-center justify-center bg-blue-800 text-white">
+                                2
+                            </div>
+                        </div>
+                        <div class="w-[85%]">
+                            <h3 class="font-[600] text-blue-700 mb-2">biaya distribusi informasi dan pemasaran</h3>
+                            <p class="text-[14px] text-justify text-slate-600 leading-[3em] w-[90%]">Tanpa web landing page, UMKM mungkin harus mengandalkan media cetak, iklan fisik, atau pameran untuk menyebarkan informasi tentang produk atau layanan mereka</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="w-full rounded-[10px] my-4 flex items-center p-6">
+                        <div class="w-[15%]">
+                            <div class="w-[40px] h-[40px] mr-2 rounded-full flex items-center justify-center bg-blue-800 text-white">
+                                3
+                            </div>
+                        </div>
+                        <div class="w-[85%]">
+                            <h3 class="font-[600] text-blue-700 mb-2">biaya distribusi informasi dan pemasaran</h3>
+                            <p class="text-[14px] text-justify text-slate-600 leading-[3em] w-[90%]">Tanpa web landing page, UMKM mungkin harus mengandalkan media cetak, iklan fisik, atau pameran untuk menyebarkan informasi tentang produk atau layanan mereka</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mengikuti tren bisnis digital menjadi sangat penting di era digital saat ini, di mana internet telah menjadi bagian integral dari kehidupan sehari-hari. Bagi UMKM, memiliki website bukan lagi sekadar pilihan, tetapi suatu keharusan untuk tetap kompetitif dan relevan. Website memungkinkan UMKM untuk hadir di dunia digital, di mana konsumen modern cenderung mencari informasi dan melakukan pembelian secara online -->
+    </section>
+
+    <!-- Section 14 / Content -->
+    <section class="relative w-[90vw] h-[800px] z-[22] mx-auto border border-blue-600 overflow-hidden p-12 bg-blue-600 mt-24 mb-16 rounded-[20px]">
+        <img src="./images/line2.svg" alt="lines" class="absolute scale-[2] w-full h-full opacity-[0.3]">
+        
+        <h1 data-aos="fade-up" class="relative z-[33] text-white text-center mx-auto text-[52px]">Menyediakan <span class="text-green-300">Formulir</span> <br> Umpan Balik Pengguna</h1>
+        <img data-aos="fade-up" data-aos-duration="1000" src="./images/comment.svg" alt="form-mobile" class="w-[80%] mx-auto mt-auto relative bottom-[-40px]">
+        <img src="./images/semiCircle.svg" alt="semi-circle-white" class="absolute w-full left-0 bottom-[-100px]">
+    </section>
+    
+    <!-- Section 15 / Content -->
+    <section class="relative w-[90vw] h-max rounded-[20px] mt-16 pt-5 mx-auto">
+        <div class="absolute right-[0px] bottom-[-60px] w-[50%] h-[60vh] rounded-full bg-blue-300 blur-[250px]">
+        </div>
+
+        <!-- Particle Square -->
+        <img src="./images/square.svg" alt="particle-square" class="absolute left-[-60px] top-[-50px] z-[-1]">
+        
+        <small class="bg-blue-500 text-white rounded-full w-max h-max px-8 py-2 text-center">Pengelolaan</small>
+        <h2 data-aos="fade-right" class="text-[36px] my-6 relative">Menyimpan Data Pengguna 📂</h2>
+        <p data-aos="fade-right" data-aos-duration="1000" class="leading-[3em] w-full text-justify my-6 text-slate-600">
+            Menyimpan data pengguna adalah langkah penting dalam optimasi web landing page untuk UMKM. Dengan mengumpulkan informasi seperti nama, email, dan preferensi produk melalui formulir yang menarik, UMKM dapat memahami perilaku pelanggan dan meningkatkan pengalaman pengguna. Penting juga untuk memastikan data disimpan dengan aman dan sesuai regulasi, seperti GDPR atau UU Perlindungan Data Pribadi di Indonesia, guna menghindari pelanggaran privasi.
+        </p>
+        <p data-aos="fade-right" data-aos-duration="1000" class="leading-[3em] w-full text-justify my-6 text-slate-600">
+            Penggunaan alat analitik dan CRM (Customer Relationship Management) dapat membantu mengelola dan memanfaatkan data pengguna. Alat ini memungkinkan UMKM melacak interaksi pengguna, mengidentifikasi tren, dan membuat kampanye pemasaran yang dipersonalisasi. Dengan data yang terorganisir, UMKM dapat meningkatkan kepuasan pelanggan, mengoptimalkan konten, dan mendorong pertumbuhan bisnis melalui hubungan jangka panjang yang lebih kuat.
+        </p>
+    </section>
+
+    <!-- Section 16 / Content -->
+    <section id="article" class="relative w-[90vw] h-max mb-12 pt-8 mx-auto">
+    
+       <!-- Particle Square -->
+        <img src="./images/square.svg" alt="particle-square" class="absolute left-[-60px] top-[-50px] z-[-1]">
+       
+        <h2 data-aos="fade-right" class="text-[36px] mb-2">Artikel Seputar UMKM 📰</h2>
+        <p data-aos="fade-right" class="leading-[3em] text-left text-slate-500">
+            Informasi untuk kamu baca saat ini
+        </p>
+        <div class="relative w-full flex items-center">
+            <div data-aos="fade-up" class="relative w-[60%] overflow-hidden h-[400px] my-6 mr-5 rounded-[20px] border shadow-lg cursor-pointer border-slate-500">
+                <div class="absolute right-6 top-6 border border-white z-[33] h-max rounded-full px-8 py-2 flex items-center justify-center text-white bg-green-500 shadow-lg">
+                    Information
+                </div>
+                <img src="./images/hor1.jpeg" alt="thumbnail" class="absolute left-0 top-0 object-cover w-full h-auto">
+                <div class="relative h-full w-full text-left flex flex-col justify-end items-start bg-black bg-opacity-[0.4] px-6 pb-10 text-white z-[22]">
+                    <h2 class="text-[18px] w-[90%] overflow-hidden overflow-ellipsis whitespace-nowrap font-[600]">Strategi Digital Marketing untuk UMKM di Era Digital</h2>
+                    <div class="text-slate-200 mt-2 w-max leading-loose flex items-center">
+                        <p>Eko Prasetyo</p>
+                        <p class="mx-4 border-x border-x-white px-4 h-max">2024</p>
+                        <p>UMKM</p>
+                    </div>
+                    <button id="btn-biz" class="cursor-pointer active:scale-[0.98] hover:brightness-[90%] duration-200 border-white outline-0 px-6 py-2 mt-3 text-blue-500 bg-white shadow-lg w-max h-max rounded-full">
+                        Baca Artikel
+                    </button>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="relative w-[40%] overflow-hidden h-[400px] my-6 ml-6 rounded-[20px] border shadow-lg cursor-pointer border-slate-500">
+                <div class="absolute right-6 top-6 border border-white z-[33] h-max rounded-full px-8 py-2 flex items-center justify-center text-white bg-green-500 shadow-lg">
+                    Information
+                </div>
+                <img src="./images/hor2.jpeg" alt="thumbnail" class="absolute left-0 top-0 object-cover w-full h-auto">
+                <div class="relative h-full w-full text-left flex flex-col justify-end items-start bg-black bg-opacity-[0.4] px-6 pb-10 text-white z-[22]">
+                    <h2 class="text-[18px] w-[90%] overflow-hidden overflow-ellipsis whitespace-nowrap font-[600]">Tantangan dan Peluang UMKM di Masa Pandemi</h2>
+                    <div class="text-slate-200 mt-2 w-max leading-loose flex items-center">
+                        <p>Eko Prasetyo</p>
+                        <p class="mx-4 border-x border-x-white px-4 h-max">2024</p>
+                        <p>UMKM</p>
+                    </div>
+                    <button id="btn-biz" class="cursor-pointer active:scale-[0.98] hover:brightness-[90%] duration-200 border-white outline-0 px-6 py-2 mt-3 text-blue-500 bg-white shadow-lg w-max h-max rounded-full">
+                        Baca Artikel
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" class="w-full flex items-center">
+            <div class="relative w-full overflow-hidden h-[400px] my-6 rounded-[20px] border  shadow-lg cursor-pointerborder-slate-500">
+                <div class="absolute right-6 top-6 border border-white z-[33] h-max rounded-full px-8 py-2 flex items-center justify-center text-white bg-green-500 shadow-lg">
+                    Information
+                </div>
+                <img src="./images/hor2.jpeg" alt="thumbnail" class="absolute left-0 top-0 object-cover w-full h-auto">
+                <div class="relative h-full w-full text-left flex flex-col justify-end items-start bg-black bg-opacity-[0.4] px-6 pb-10 text-white z-[22]">
+                    <h2 class="text-[18px] w-[90%] overflow-hidden overflow-ellipsis whitespace-nowrap font-[600]">Mengapa Branding Penting bagi UMKM?</h2>
+                    <div class="text-slate-200 mt-2 w-max leading-loose flex items-center">
+                        <p>Eko Prasetyo</p>
+                        <p class="mx-4 border-x border-x-white px-4 h-max">2024</p>
+                        <p>UMKM</p>
+                    </div>
+                    <button id="btn-biz" class="cursor-pointer active:scale-[0.98] hover:brightness-[90%] duration-200 border-white outline-0 px-6 py-2 mt-3 text-blue-500 bg-white shadow-lg w-max h-max rounded-full">
+                        Baca Artikel
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" class="w-full flex items-center">
+            <div class="relative w-[30%] overflow-hidden h-[400px] my-6 mr-6 rounded-[20px] border shadow-lg cursor-pointer border-slate-500">
+                <div class="absolute right-6 top-6 border border-white z-[33] h-max rounded-full px-8 py-2 flex items-center justify-center text-white bg-green-500 shadow-lg">
+                    Information
+                </div>
+                <img src="./images/ver1.jpeg" alt="thumbnail" class="absolute left-0 top-0 object-cover w-full h-auto">
+                <div class="relative h-full w-full text-left flex flex-col justify-end items-start bg-black bg-opacity-[0.4] px-6 pb-10 text-white z-[22]">
+                    <h2 class="text-[18px] w-[90%] overflow-hidden overflow-ellipsis whitespace-nowrap font-[600]">Peran Teknologi dalam Pengembangan UMKM</h2>
+                    <div class="text-slate-200 mt-2 w-max leading-loose flex items-center">
+                        <p>Eko Prasetyo</p>
+                        <p class="mx-4 border-x border-x-white px-4 h-max">2024</p>
+                        <p>UMKM</p>
+                    </div>
+                    <button id="btn-biz" class="cursor-pointer active:scale-[0.98] hover:brightness-[90%] duration-200 border-white outline-0 px-6 py-2 mt-3 text-blue-500 bg-white shadow-lg w-max h-max rounded-full">
+                        Baca Artikel
+                    </button>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1000" class="relative w-[70%] overflow-hidden h-[400px] my-6 ml-6 rounded-[20px] border shadow-lg cursor-pointer border-slate-500">
+                <div class="absolute right-6 top-6 border border-white z-[33] h-max rounded-full px-8 py-2 flex items-center justify-center text-white bg-green-500 shadow-lg">
+                    Information
+                </div>
+                <img src="./images/hor3.jpeg" alt="thumbnail" class="absolute left-0 top-0 object-cover w-full h-auto">
+                <div class="relative h-full w-full text-left flex flex-col justify-end items-start bg-black bg-opacity-[0.4] px-6 pb-10 text-white z-[22]">
+                    <h2 class="text-[18px] w-[90%] overflow-hidden overflow-ellipsis whitespace-nowrap font-[600]">Pentingnya Pelatihan bagi Pengusaha UMKM</h2>
+                    <div class="text-slate-200 mt-2 w-max leading-loose flex items-center">
+                        <p>Eko Prasetyo</p>
+                        <p class="mx-4 border-x border-x-white px-4 h-max">2024</p>
+                        <p>UMKM</p>
+                    </div>
+                    <button id="btn-biz" class="cursor-pointer active:scale-[0.98] hover:brightness-[90%] duration-200 border-white outline-0 px-6 py-2 mt-3 text-blue-500 bg-white shadow-lg w-max h-max rounded-full">
+                        Baca Artikel
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 17 / Content -->
+    <section class="relative w-[90vw] h-max rounded-[20px] mt-16 mb-10 pt-5 mx-auto">
+        
+        <!-- Particle Square -->
+        <img src="./images/square.svg" alt="particle-square" class="absolute left-[-60px] top-[-50px] z-[-1]">
+        
+        <small class="bg-blue-500 text-white rounded-full w-max h-max px-8 py-2 text-center">Pengembangan</small>
+        <h2 data-aos="fade-right" class="text-[36px] my-6 relative">Landing Page yang Efektif 💡</h2>
+        <p data-aos="fade-right" data-aos-duration="1000" class="leading-[3em] w-full text-justify my-6 text-slate-600">
+            Web landing page yang efektif sangat penting bagi UMKM karena berfungsi sebagai wajah pertama bisnis di dunia digital. Dalam era teknologi saat ini, konsumen cenderung mencari informasi secara online sebelum melakukan pembelian. Sebuah landing page yang dirancang dengan baik dapat menarik perhatian pengunjung, memberikan informasi yang relevan, dan mendorong mereka untuk melakukan tindakan seperti mendaftar, membeli produk, atau menghubungi bisnis. Ini adalah langkah pertama untuk membangun kepercayaan dan kredibilitas dengan audiens, serta memperkuat branding UMKM di pasar yang semakin kompetitif.
+        </p>
+        <div class="w-full overflow-hidden flex items-center justify-between rounded-[12px] border border-slate-500">
+            <div class="tab w-1/3 flex items-center justify-center bg-blue-500 text-white cursor-pointer py-3 active:scale-[0.99] hover:brightness-[90%]" data-tab="desainVisual">Desain Visual</div>
+            <div class="tab w-1/3 flex items-center justify-center border-x border-x-slate-300 cursor-pointer py-3 active:scale-[0.99] hover:brightness-[90%]" data-tab="cta">Call-to-Action</div>
+            <div class="tab w-1/3 flex items-center justify-center cursor-pointer py-3 active:scale-[0.99] hover:brightness-[90%]" data-tab="gambarVideo">Gambar dan Video</div>
+        </div>
+        
+        <div data-aos="fade-up" class="content w-full bg-slate-100 mt-6 rounded-[12px] text-slate-700 p-6 leading-[3em]" id="tabContent">
+            <p class="content leading-[3em]">
+                Desain visual dan tata letak landing page sangat penting untuk menciptakan kesan pertama yang baik. Tata letak yang bersih dan rapi memudahkan pengunjung menemukan informasi yang mereka cari. Gunakan ruang putih secara efektif untuk menghindari kekacauan dan membuat elemen penting lebih menonjol. Pastikan elemen-elemen penting seperti judul, subjudul, dan Call-to-Action (CTA) memiliki penempatan dan ukuran yang berbeda untuk menarik perhatian. Konsistensi dalam penggunaan palet warna dan tipografi yang sesuai dengan branding bisnis Anda sangat penting untuk menciptakan pengalaman yang koheren. Selain itu, pastikan landing page Anda responsif dan tampil baik di berbagai perangkat, termasuk desktop, tablet, dan ponsel.
+            </p>
+        </div>
+    </section>
+    
+    <!-- Section 18 / Content -->
+    <section class="relative w-screen min-h-[600px] bg-blue-600 overflow-hidden border border-slate-500 text-white mb-12 pt-5 mt-24 mx-auto flex items-center">
+        <img src="./images/line2.svg" alt="lines" class="absolute scale-[2] w-full h-full opacity-[0.3]">
+        
+        <div class="relative z-[22] overflow-hidden w-1/2 px-20">
+            <h2 data-aos="fade-right" class="text-[36px] mb-8">Mengikuti Trend Bisnis Digital</h2>
+            <p data-aos="fade-right" class="leading-[3em] text-justify text-slate-100">
+                Bagi UMKM, memiliki website bukan lagi sekadar pilihan, tetapi suatu keharusan untuk tetap kompetitif dan relevan. Website memungkinkan UMKM untuk hadir di dunia digital, di mana konsumen modern cenderung mencari informasi dan melakukan pembelian secara online. Dengan memiliki website yang responsif dan informatif, UMKM dapat memperluas jangkauan pasar mereka, meningkatkan visibilitas online, dan membangun hubungan yang lebih dekat dengan pelanggan potensial
+            </p>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="relative z-[22] w-1/2 h-[600px] overflow-hidden flex items-center justify-center">
+            <img src="./images/trend2.svg" alt="trend" class="absolute bottom-[-50px] mr-6 w-[80%] h-[90%]">
+        </div>
+    </section>
+
+    <!-- Section 19 / Content -->
+    <section class="relative w-screen px-16 h-max rounded-[20px] mt-16 mb-10 pt-5 mx-auto overflow-hidden">
+
+        <!-- Particle Square -->
+        <img src="./images/square.svg" alt="particle-square" class="absolute left-[-60px] top-[-50px] z-[-1]">
+        
+        <small class="bg-blue-500 text-white rounded-full w-max h-max px-8 py-2 text-center">Statistik pengunjung</small>
+        <h2 data-aos="fade-right" class="text-[36px] my-6 relative">Analisis dan Pemahaman Pelanggan 📰</h2>
+        <p data-aos="fade-right" class="leading-[3em] w-full text-justify my-6 text-slate-600">
+            Website memungkinkan UMKM untuk mengumpulkan data berharga tentang perilaku dan preferensi pelanggan melalui alat analitik web. Dengan menggunakan alat seperti Google Analytics, UMKM dapat memahami halaman mana yang paling sering dikunjungi, produk apa yang paling diminati, dan dari mana asal pengunjung. Informasi ini sangat penting untuk mengoptimalkan strategi pemasaran dan meningkatkan pengalaman pengguna. Dengan menganalisis data ini, UMKM dapat membuat keputusan yang lebih baik dan menyesuaikan produk atau layanan mereka agar lebih sesuai dengan kebutuhan pelanggan.
+        </p>
+    </section>
+
+    <!-- Footer Component -->
+    <footer class="relative w-screen h-[500px] rounded-tr-[260px] pt-8 mt-20 bg-blue-600 text-white overflow-hidden">
+        <img src="./images/line2.svg" alt="lines" class="absolute top-0 left-0 scale-[2.5] w-full h-full opacity-[0.3]">
+
+        <div class="relative w-full z-[22] px-16 h-[88%] flex items-center">
+            <div class="relative w-[30%]">
+                <div data-aos="fade-right" class="w-full flex items-center">
+                    <img src="./images/logo.svg" alt="logo" class="w-[35px] ml-[-1px] mr-2 mb-6">
+                    <h1 class="text-[32px] flex items-center"><span class="text-white">Biz</span><span class="text-blue-200 font-[600]">Growth</span></h1>
+                </div>
+                <p class="leading-[3em] mt-3 w-[90%] text-[14px]">Website yang bertujuan mendorong kreatifitas para pengusaha UMKM di era digital</p>
+            </div>
+            <div class="relative pl-5 w-[70%] flex items-center">
+                <ul class="list-none w-1/3">
+                    <li class="mb-6 cursor-pointer">Beranda</li>
+                    <li class="mb-6 cursor-pointer">IMKM Terpopuler</li>
+                    <li class="mb-6 cursor-pointer">Manfaat Optimasi</li>
+                    <li class="mb-6 cursor-pointer">Kisah Sukses</li>
+                </ul>
+                <ul class="list-none w-1/3">
+                    <li class="mb-6 cursor-pointer">Pelaku Optimasi</li>
+                    <li class="mb-6 cursor-pointer">Waktu Optimasi</li>
+                    <li class="mb-6 cursor-pointer">Pentingnya Optimasi</li>
+                    <li class="mb-6 cursor-pointer">Pengurangan Biaya</li>
+                </ul>
+                <ul class="list-none w-1/3">
+                    <li class="mb-6 cursor-pointer">Generasi Digital</li>
+                    <li class="mb-6 cursor-pointer">Kredibilitas</li>
+                    <li class="mb-6 cursor-pointer">Artikel UMKM</li>
+                    <li class="mb-6 cursor-pointer">Page yang Efektif</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="relative w-full h-[12%] z-[22] bg-blue-900 flex items-center justify-center text-white">
+            <small>BisGrowth Feat Himatif 2024</small>
+        </div>
+    </footer>
+
+    <!-- Script external Font Awesome -->
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const content = document.getElementById('tabContent');
+    
+        const tabContent = {
+            desainVisual: 'Desain visual dan tata letak landing page sangat penting untuk menciptakan kesan pertama yang baik. Tata letak yang bersih dan rapi memudahkan pengunjung menemukan informasi yang mereka cari. Gunakan ruang putih secara efektif untuk menghindari kekacauan dan membuat elemen penting lebih menonjol. Pastikan elemen-elemen penting seperti judul, subjudul, dan Call-to-Action (CTA) memiliki penempatan dan ukuran yang berbeda untuk menarik perhatian. Konsistensi dalam penggunaan palet warna dan tipografi yang sesuai dengan branding bisnis Anda sangat penting untuk menciptakan pengalaman yang koheren. Selain itu, pastikan landing page Anda responsif dan tampil baik di berbagai perangkat, termasuk desktop, tablet, dan ponsel',
+            cta: 'Call-to-Action (CTA) adalah elemen penting dalam landing page karena berfungsi untuk mengarahkan pengunjung melakukan tindakan yang diinginkan, seperti mendaftar, membeli, atau mengunduh sesuatu. Penempatan dan desain CTA sangat memengaruhi tingkat konversi. CTA harus mudah terlihat dan berbeda dari elemen lainnya. Gunakan warna yang kontras dengan latar belakang untuk menarik perhatian, serta teks yang singkat, jelas, dan menggugah minat, seperti "Daftar Sekarang", "Dapatkan Diskon", atau "Pelajari Lebih Lanjut". Tempatkan CTA di posisi yang mudah dijangkau oleh pengunjung, seperti di bagian atas halaman (above the fold), serta di beberapa titik strategis lainnya di seluruh halaman',
+            gambarVideo: 'Gambar dan video yang menarik dapat meningkatkan keterlibatan pengunjung dan membuat landing page lebih dinamis. Konten visual membantu menjelaskan produk atau layanan dengan lebih baik dan menciptakan hubungan emosional dengan pengunjung. Gunakan gambar yang relevan dan berkualitas tinggi untuk mendukung pesan yang ingin disampaikan, hindari penggunaan gambar stok yang terlihat tidak autentik. Video dapat digunakan untuk menjelaskan produk atau layanan secara lebih mendetail. Pastikan video singkat, menarik, dan langsung pada intinya. Selain itu, pastikan gambar dan video dioptimalkan untuk web agar tidak memperlambat waktu loading halaman. Kecepatan loading yang lambat dapat meningkatkan tingkat pentalan'
+        };
+    
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                content.innerText = tabContent[tab.getAttribute('data-tab')];
+                // Tambahkan kode berikut untuk mengubah warna tab saat aktif
+                tabs.forEach(t => {
+                    if (t.classList.contains('active')) {
+                        t.classList.add('bg-blue-500', 'text-white');
+                    } else {
+                        t.classList.remove('bg-blue-500', 'text-white');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Script Font Awesome -->
+    <script src="https://kit.fontawesome.com/ff1e99eb11.js" crossorigin="anonymous"></script>
+</body>
+</html>

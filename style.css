@@ -1,0 +1,56 @@
+* {
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(0, 0, 105);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 9999px;
+    height: 80px;
+}
+
+#btn-biz {
+    position: relative;
+    overflow: hidden;
+}
+
+#btn-biz::before {
+    position: absolute;
+    content: '';
+    width: 120%;
+    height: 120%;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    background-color: rgb(2, 69, 194);
+    transition: transform 0.6s;
+    display: block;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+
+  #btn-biz:hover {
+    color: rgb(255, 255, 255)
+  }
+  
+  #btn-biz:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  #btn-biz:active {
+    transition: 0.5s;
+  }
