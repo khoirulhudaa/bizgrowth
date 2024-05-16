@@ -30,8 +30,11 @@
 </head>
 <body class="overflow-x-hidden">
 
+    
+    <img src="./images/square.svg" alt="lines" class="absolute w-full z-[33] right-0 top-0">
+    
     <!-- Navbar Component -->
-    <nav class="w-screen h-max px-16 py-7 flex flex items-center">
+    <nav class="relative w-screen h-max px-16 py-7 flex flex items-center">
         
         <!-- Sidebar - Mobile Device Only -->
         <div class="fixed lg:hidden top-0 left-0 z-[99999] w-[90%] h-screen shadow-lg bg-white p-8">
@@ -100,11 +103,11 @@
                 </a>
                     <a href="#user">
                     <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] ml-12">Pelaku</li>
-                </a>
-                    <a href="#type">
-                    <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] ml-12">Jenis biaya</li>
-                </a>
-                    <a href="#article">
+            </a>
+                <a href="#type">
+                <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] ml-12">Jenis biaya</li>
+            </a>
+                <a href="#article">
                     <li class="cursor-pointer hover:text-slate-600 duration-200 active:scale-[0.98] ml-12">Artikel</li>
                 </a>
             </ul>
@@ -113,14 +116,13 @@
     
     <!-- Section 1 / Hero Component -->
     <section id="beranda" class="relative w-screen h-max bg-white flex items-center">
-        <img src="./images/square.svg" alt="lines" class="absolute w-full right-0 top-0">
         
         <div class="absolute left-0 top-[30%] w-[50%] h-[60vh] rounded-full bg-blue-400 blur-[250px]">
         </div>
         
         <!-- Conten Left -->
         <div class="relative z-[333] flex flex-col pl-16 justify-center w-1/2 h-full">
-            <h2 data-aos="fade-right" class="text-[64px] text-[700] leading-normal mt-[-40px] mb-2">
+            <h2 data-aos="fade-right" class="text-[56px] text-[700] leading-normal mt-[-20px] mb-2">
                 Optimalkan Web, Kembangkan <span class="text-blue-600 font-[600] mx-2">Bisnis</span> UMKM Anda
             </h2>
             <p data-aos="fade-right" class="text-slate-700 leading-loose mb-2 ml-[3px]">Lorem ipsum dolor sit amet consectetur adipisicing elit-.</p>
@@ -242,7 +244,7 @@
     </section> 
 
     <!-- Section 4 / Content -->
-    <section class="relative w-[90vw] h-[600px] bg-blue-600 border border-slate-500 text-white mb-12 pt-5 mx-auto rounded-[20px] flex items-center overflow-hidden">
+    <section class="relative w-screen h-[600px] bg-blue-600 border border-slate-500 text-white mb-12 pt-5 mx-auto flex items-center overflow-hidden">
         <img src="./images/line2.svg" alt="lines" class="absolute scale-[2] w-full h-full opacity-[0.3]">
         
         <div class="relative w-1/2 z-[22] px-20">
@@ -304,12 +306,15 @@
         <img src="./images/line2.svg" alt="lines" class="absolute scale-[2] w-full h-full opacity-[0.3]">
         
         <h1 data-aos="fade-up" class="relative z-[33] text-white text-center mx-auto text-[52px]">Kisah <span class="text-green-300">Sukses</span> <br> Pengusaha UMKM (Web)</h1>
-        <img data-aos="fade-up" data-aos-duration="1000" src="./images/human.svg" alt="human" class="w-[80%] mx-auto w-full relative mt-[-200px]">
-        <div data-aos="fade-up" class="relative z-[999] mt-auto bottom-[200px] mx-auto w-[140px] h-[140px] rounded-full flex items-center justify-center border border-blue-500">
+        <img data-aos="fade-up" data-aos-duration="1000" src="./images/human.svg" alt="human" class="w-[80%] mx-auto w-full relative mt-[-100px]">
+        
+        <!-- Button Play -->
+        <div class="absolute z-[999] mt-auto bottom-[50px] transform translate-x-[-50%] left-[50%] w-[140px] h-[140px] rounded-full flex items-center justify-center border border-blue-500">
             <div class="w-[100px] h-[100px] rounded-full flex items-center justify-center text-[36px] bg-blue-500 text-white cursor-pointer hover:brightness-[90%] active:scale-[0.98]">
                 <i class="fa fa-play"></i>
             </div>
         </div>
+        
         <img src="./images/semiCircle.svg" alt="semi-circle-white" class="absolute w-full left-0 bottom-0">
     </section>
 
@@ -421,14 +426,15 @@
     <section class="relative w-screen min-h-[600px] bg-blue-600 overflow-hidden border border-slate-500 text-white mb-12 pt-5 mx-auto flex items-center">
         <img src="./images/line2.svg" alt="lines" class="absolute scale-[2] w-full h-full opacity-[0.3]">
         
-        <div class="relative z-[22] overflow-hidden w-1/2 px-20">
-            <h2 data-aos="fade-right" class="text-[36px] mb-8">Kredibilitas dan Profesionalisme</h2>
+        <div class="relative z-[22] overflow-hidden w-1/2 py-6 px-20">
+            <h2 data-aos="fade-right" class="text-[36px] mb-8">Profesionalisme UMKM</h2>
             <p data-aos="fade-right" class="leading-[3em] text-justify text-slate-100">
                 Sebuah website yang dirancang dengan baik dapat memberikan kesan profesional dan meningkatkan kredibilitas bisnis UMKM di mata konsumen. Dengan adanya website, UMKM dapat menunjukkan informasi tentang produk atau layanan yang mereka tawarkan, serta memberikan kontak yang mudah dijangkau untuk berkomunikasi dengan pelanggan. Hal ini membantu membangun kepercayaan dan memperkuat branding bisnis, sehingga menarik lebih banyak pelanggan potensial
             </p>
         </div>
+
         <div data-aos="fade-up" data-aos-duration="1000" class="relative z-[22] w-1/2 h-max py-12 overflow-hidden flex items-center justify-center">
-            <img src="./images/profesional.svg" alt="people-profesional" class="relative bottom-5 w-[80%] h-[80%]">
+            <img src="./images/profesional.svg" alt="people-profesional" class="relative bottom-5 w-[85%] h-[85%]">
         </div>
     </section>
     
@@ -493,7 +499,7 @@
         <img src="./images/line2.svg" alt="lines" class="absolute scale-[2] w-full h-full opacity-[0.3]">
         
         <h1 data-aos="fade-up" class="relative z-[33] text-white text-center mx-auto text-[52px]">Menyediakan <span class="text-green-300">Formulir</span> <br> Umpan Balik Pengguna</h1>
-        <img data-aos="fade-up" data-aos-duration="1000" src="./images/comment.svg" alt="form-mobile" class="w-[80%] mx-auto mt-auto relative bottom-[-40px]">
+        <img data-aos="fade-up" data-aos-duration="1000" src="./images/comment.svg" alt="form-mobile" class="w-[85%] mx-auto mt-auto relative bottom-[-40px]">
         <img src="./images/semiCircle.svg" alt="semi-circle-white" class="absolute w-full left-0 bottom-[-100px]">
     </section>
     
@@ -671,7 +677,7 @@
     </section>
 
     <!-- Footer Component -->
-    <footer class="relative w-screen h-[500px] rounded-tr-[260px] pt-8 mt-20 bg-blue-600 text-white overflow-hidden">
+    <footer class="relative w-screen h-[500px] pt-8 mt-20 bg-blue-600 text-white overflow-hidden">
         <img src="./images/line2.svg" alt="lines" class="absolute top-0 left-0 scale-[2.5] w-full h-full opacity-[0.3]">
 
         <div class="relative w-full z-[22] px-16 h-[88%] flex items-center">
