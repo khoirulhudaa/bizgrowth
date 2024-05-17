@@ -1,8 +1,10 @@
-# bizGrowth [bizGrowth](https://bizgrowth.vercel.app/)
+# [bizGrowth](https://bizgrowth.vercel.app/)
 
 ![bizGrowth Logo](./images/logo.svg)
 
 ## Introduction
+
+link web bizGrowth : https://bizgrowth.vercel.app/
 
 bizGrowth is a web platform dedicated to empowering Micro, Small, and Medium Enterprises (UMKM) by providing them with tools and resources to foster business growth. The name "bizGrowth" reflects our commitment to assisting UMKM in expanding their ventures efficiently and sustainably.
 
